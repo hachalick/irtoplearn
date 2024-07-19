@@ -73,6 +73,6 @@ def export_words_from_htmls(limit: int = -1):
 
 limit = -1
 # create_file_links()
-# download_file_htmls(limit, 1000)
-# export_words_from_htmls(limit)
+# download_file_htmls(limit, 0)
+export_words_from_htmls(limit)
 
