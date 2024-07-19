@@ -54,8 +54,8 @@ def export_words_from_htmls(limit: int = -1):
     __func_utils.write_file(list_of_information, "data_website", "json")
 
 
-limit = 3
-# create_file_links()
-# download_file_htmls(limit)
+limit = 5
+create_file_links()
+download_file_htmls(limit)
 export_words_from_htmls(limit)
 
