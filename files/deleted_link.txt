@@ -1,0 +1,10 @@
+https://toplearn.com/courses/web/آموزش-معماری-های-مبتنی-بر-ddd-به-همراه-الگوی-cqrs
+https://toplearn.com/courses/windows/آموزش-سوکت-نویسی-با-پایتون
+https://toplearn.com/courses/windows/بد-افزار-نویسی-با-پایتون(کلاه-سفید)
+https://toplearn.com/courses/windows/آموزش-design-pattern-در-سی-شارپ
+https://toplearn.com/courses/security/تست-نفوذ-پیشرفته-اکانت-های-اینستاگرام
+https://toplearn.com/courses/security/پیش-نیاز-هک-و-امنیت
+https://toplearn.com/courses/security/آموزش-کاربرد-پایتون-در-هک-و-امنیت-2
+https://toplearn.com/courses/security/ساخت-لینک-مخرب-با-پایتون
+https://toplearn.com/courses/security/آموزش-تست-نفوذ-با-جاوا-اسکریپت
+https://toplearn.com/courses/security/دوره-هكر-قانونمند-(ceh-v10)
