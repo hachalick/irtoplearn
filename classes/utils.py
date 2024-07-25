@@ -1,4 +1,5 @@
 import json
+import re
 
 
 class UtilsIR:
@@ -126,5 +127,31 @@ class UtilsIR:
     def color_text(self, text: str) -> str:
         return f"\033[92m{text}\033[0m"
 
-    def underline_text(self, text: str) -> str:
-        return f"\033[4m{text}\033[0m"
+    def print_dict(self, dict_of_data: dict, end="\n") -> None:
+        list_len_key = []
+        for key in dict_of_data.keys():
+            list_len_key.append(len(key))
+        max_len = max(list_len_key)
+        for key in dict_of_data:
+            title = self.fill_text(key, " ", max_len)
+            print(f"\033[93m{title} )\033[0m {dict_of_data[key]}", end=end)
+
+    def fill_text(self, text: str, place: str, number: int) -> str:
+        mines = number - len(text)
+        for i in range(mines):
+            text += place
+        return text
+
+    def detect_language(self, word: str) -> str:
+        """
+        Detects the word is english or farsi
+        :param word: str -> word
+        :return:str -> "en" | "fa"
+        """
+        if re.match("^[a-z0-9#]*$", word):
+            detected_language = "en"
+        elif re.match("^[\u0600-\u06FF\s]+$", word):
+            detected_language = "fa"
+        else:
+            detected_language = "com"
+        return detected_language
