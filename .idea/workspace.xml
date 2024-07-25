@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2108659-f095-4126-997f-79a8cf8125a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/classes/ir.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/namefile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/irtoplearn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/irtoplearn.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/readweb.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/readweb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/htmls/آموزش-نصب-و-راه-اندازی-xamarin.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/htmls/آموزش-نصب-و-راه-اندازی-xamarin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/htmls/دوره-برنامه-نویسی-اندروید-با-سی-شارپ-(-xamarin-).html" beforeDir="false" afterPath="$PROJECT_DIR$/files/htmls/دوره-برنامه-نویسی-اندروید-با-سی-شارپ-(-xamarin-).html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/htmls/نحوه-استفاده-از-support-v7-در-xamarin.html" beforeDir="false" afterPath="$PROJECT_DIR$/files/htmls/نحوه-استفاده-از-support-v7-در-xamarin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/jsons/data_website.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/jsons/links.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/ir.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/ir.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +33,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/programmin/python/bazyabi_403_nahaei/classes/IR.py&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/programmin/python/bazyabi_403_nahaei/classes/answer.py&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -104,7 +92,7 @@
       <workItem from="1721645587115" duration="13873000" />
       <workItem from="1721659879137" duration="10793000" />
       <workItem from="1721754037815" duration="8952000" />
-      <workItem from="1721894339472" duration="20652000" />
+      <workItem from="1721894339472" duration="22368000" />
     </task>
     <servers />
   </component>
@@ -114,6 +102,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/irtoplearn$utils.coverage" NAME="utils Coverage Results" MODIFIED="1721572331568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" />
     <SUITE FILE_PATH="coverage/irtoplearn$ir.coverage" NAME="ir Coverage Results" MODIFIED="1721572366998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classes" />
-    <SUITE FILE_PATH="coverage/irtoplearn$main.coverage" NAME="main Coverage Results" MODIFIED="1721917574914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/irtoplearn$main.coverage" NAME="main Coverage Results" MODIFIED="1721918343082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

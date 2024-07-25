@@ -1,8 +1,8 @@
 from classes.utils import UtilsIR
 from classes.namefile import NameFile
 import hazm
-import nltk
 import re
+import math
 
 
 class irsystem:
@@ -1859,3 +1859,55 @@ class irsystem:
             return word
         else:
             return text
+
+    def calculate_tf(self, list_of_words: list):
+        """
+        calculate tf from list of words
+        :param list_of_words: [ word, ... ]
+        :return:
+        """
+        dict_of_words = {}
+        for i in list_of_words:
+            dict_of_words[i] = 0
+        for i in list_of_words:
+            dict_of_words[i] += 1
+        dict_tf = {}
+        for i in dict_of_words:
+            dict_tf[i] = math.log(dict_of_words[i]) + 1
+        return dict_tf
+
+    def create_list_tf(self, query: list, list_dict_title_and_plot: list, weight_tf_title: float = 1.0,
+                       weight_tf_plot: float = 1.0, weight_tf_tags: float = 1.0):
+        """
+        create list of dict id and tf - title and tf of plot from list of words tokenize query and list of dict id and
+        list tokenize title and list tokenize plot on titles and plot
+        :param query: list[str] -> [ word-tokenize-query, ... ]
+        :param list_dict_title_and_plot: list[dict] -> { word: { frequency: 0,
+                                                         title: [ { index_row: index_word_in_sense, ... }, ... ],
+                                                         plot : [ { index_row: index_word_in_sense, ... }, ... ], ... }
+        :param weight_tf_title: float -> 1.0
+        :param weight_tf_plot: float -> 1.0
+        :param weight_tf_tags: float -> 1.0
+        :return: [ { id: 0,
+                     score: 0.0,
+                     title: { word: tf, ... },
+                     plot : { word: tf, ... }, } ... ]
+        """
+        list_tf = []
+        list_id = []
+        for i in list_dict_title_and_plot:
+            for j in query:
+                if j in i["title"] and i["id"] not in list_id:
+                    list_id.append(i["id"])
+                    list_tf.append({"id": i["id"], "title": self.calculate_tf(i["title"]), "plot": self.calculate_tf(i["plot"])})
+        for i in list_tf:
+            if weight_tf_title is not 1:
+                for j in i["title"]:
+                    i["title"][j] *= weight_tf_title
+            if weight_tf_plot is not 1:
+                for j in i["plot"]:
+                    i["plot"][j] *= weight_tf_plot
+            if weight_tf_tags is not 1:
+                for j in i["tags"]:
+                    i["tags"][j] *= weight_tf_tags
+        return list_tf
